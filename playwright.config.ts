@@ -1,15 +1,14 @@
-// playwright.config.ts
 import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
   testDir: "./tests",
-  timeout: 30000,
+  timeout: 10000,
   use: {
-    baseURL: "http://calmplete.net", // важно
+    baseURL: "http://calmplete.net",
     headless: false,
     viewport: { width: 1280, height: 720 }
   },
-  reporter: [["html", { outputFolder: "playwright-report" }]], // отчёт
+  reporter: [["html", { outputFolder: "playwright-report" }]],
   projects: [
     {
       name: "webkit",
