@@ -1,4 +1,4 @@
-# Calmplete QA Assignment – <Vladimir Kudriavchenko>
+# Calmplete QA Test – <Vladimir Kudriavchenko>
 
 ## 1. Scope
 
