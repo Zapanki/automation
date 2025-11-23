@@ -5,10 +5,14 @@ export default defineConfig({
   timeout: 15000,
   use: {
     baseURL: "http://calmplete.net",
-    headless: true,
-    viewport: { width: 1280, height: 720 }
+    headless: false,
+    viewport: { width: 1280, height: 720 },
+    screenshot: 'only-on-failure',
+    trace: 'retain-on-failure',
   },
-  reporter: [["html", { outputFolder: "playwright-report" }]],
+  reporter: [["html", { outputFolder: "playwright-report" }],
+  ["allure-playwright", { outputFolder: "allure-results" }],
+  ],
   projects: [
     {
       name: "webkit",
